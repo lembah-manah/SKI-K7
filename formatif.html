@@ -7,6 +7,45 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+  details.kunci{
+    margin-top:10px;
+    border-left:3px solid #2f855a;
+    background:#f0fdf4;
+    border-radius:6px;
+    overflow:hidden;
+  }
+  details.kunci summary{
+    cursor:pointer;
+    padding:8px 12px;
+    font-weight:600;
+    color:#276749;
+    font-size:13px;
+    list-style:none;
+    user-select:none;
+  }
+  details.kunci summary::-webkit-details-marker{display:none;}
+  details.kunci summary::before{content:"▸ Kunci Jawaban & Pembahasan";}
+  details.kunci[open] summary::before{content:"▾ Kunci Jawaban & Pembahasan";}
+  details.kunci summary::after{content:"";}
+  details.kunci .kunci-body{
+    padding:0 14px 12px;
+    font-size:13.5px;
+    line-height:1.55;
+    color:#234;
+  }
+  details.kunci .jawaban{
+    font-weight:700;
+    color:#1a5276;
+  }
+  details.kunci .catatan{
+    font-style:italic;
+    font-size:12.5px;
+    color:#7b341e;
+    margin-top:4px;
+  }
+  table.match-table td details.kunci{margin-top:6px;}
+</style>
 </head>
 <body>
 
@@ -38,64 +77,84 @@
 
     <div class="card">
       <div class="soal"><p class="q">1. Sebelum Islam, penduduk Mekah mempunyai kebiasaan buruk seperti menyembah berhala dan berjudi. Keadaan penduduk Mekah tersebut disebut masa jahiliah, yang berarti ....</p>
-      <ol class="opts"><li data-letter="a. ">tidak mengenal Tuhan dan tidak memiliki keyakinan agama</li><li data-letter="b. ">berada dalam kesulitan ekonomi</li><li data-letter="c. ">selalu dilanda bencana alam</li><li data-letter="d. ">berada dalam kesesatan akidah dan kehancuran moral</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">tidak mengenal Tuhan dan tidak memiliki keyakinan agama</li><li data-letter="b. ">berada dalam kesulitan ekonomi</li><li data-letter="c. ">selalu dilanda bencana alam</li><li data-letter="d. ">berada dalam kesesatan akidah dan kehancuran moral</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: d</span><br>Istilah "jahiliah" bukan berarti masyarakat Mekah tidak tahu apa-apa, sebab secara peradaban dan perdagangan mereka cukup maju. Istilah ini merujuk pada kebodohan dalam hal akidah (menyembah berhala) dan rusaknya moral (perjudian, perbudakan, mengubur bayi perempuan, dsb).</div></details></div>
 
       <div class="soal"><p class="q">2. Di masa sebelum Islam, Ka'bah di Mekah menjadi pusat kepercayaan yang menyimpang. Bentuk penyimpangan kepercayaan yang paling utama di tempat suci ini ...</p>
-      <ol class="opts"><li data-letter="a. ">menyembah satu Tuhan yang Maha Esa</li><li data-letter="b. ">menyembah berhala sebagai perantara kepada Tuhan</li><li data-letter="c. ">melakukan ziarah ke tempat-tempat suci</li><li data-letter="d. ">menyembah malaikat dan jin</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">menyembah satu Tuhan yang Maha Esa</li><li data-letter="b. ">menyembah berhala sebagai perantara kepada Tuhan</li><li data-letter="c. ">melakukan ziarah ke tempat-tempat suci</li><li data-letter="d. ">menyembah malaikat dan jin</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: b</span><br>Meski penduduk Mekah masih mengenal Allah sebagai pencipta, mereka meletakkan ratusan berhala di sekitar Ka'bah (di antaranya Hubal, Latta, Uzza, Manat) sebagai perantara untuk mendekatkan diri kepada Tuhan — inilah bentuk kemusyrikan yang paling menonjol.</div></details></div>
 
       <div class="soal"><p class="q">3. Salah satu praktik sosial yang sangat buruk di masyarakat Mekah sebelum Islam adalah ....</p>
-      <ol class="opts"><li data-letter="a. ">perdagangan yang curang</li><li data-letter="b. ">meminum arak dan berjudi</li><li data-letter="c. ">mengubur anak perempuan hidup-hidup karena malu dan takut miskin</li><li data-letter="d. ">poliandri (seorang wanita memiliki banyak suami)</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">perdagangan yang curang</li><li data-letter="b. ">meminum arak dan berjudi</li><li data-letter="c. ">mengubur anak perempuan hidup-hidup karena malu dan takut miskin</li><li data-letter="d. ">poliandri (seorang wanita memiliki banyak suami)</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: c</span><br>Tradisi <em>wa'dul banat</em> (mengubur bayi perempuan hidup-hidup) merupakan praktik paling kejam dan ekstrem di masa jahiliah, dilakukan karena rasa malu memiliki anak perempuan dan takut miskin. Meski pilihan lain (judi, minuman keras) juga buruk, opsi c adalah bentuk pelanggaran hak asasi paling berat.</div></details></div>
 
       <div class="soal"><p class="q">4. Bayangkan Anda adalah seorang pedagang yang sering bertemu dengan Muhammad sebelum beliau menjadi seorang Nabi. Anda melihat perubahan besar pada dirinya setelah menerima wahyu pertama. Perubahan mendasar apa yang paling mencolok pada diri Muhammad setelah menerima wahyu pertama di Gua Hira?</p>
-      <ol class="opts"><li data-letter="a. ">Beliau menjadi lebih giat berdagang ke luar kota Mekah.</li><li data-letter="b. ">Beliau mulai sering menyendiri dan menjauhi keramaian.</li><li data-letter="c. ">Beliau mulai mengajak orang-orang untuk meninggalkan berhala dan menyembah Allah Yang Maha Esa.</li><li data-letter="d. ">Beliau menjadi lebih fokus pada urusan keluarga dan rumah tangga.</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">Beliau menjadi lebih giat berdagang ke luar kota Mekah.</li><li data-letter="b. ">Beliau mulai sering menyendiri dan menjauhi keramaian.</li><li data-letter="c. ">Beliau mulai mengajak orang-orang untuk meninggalkan berhala dan menyembah Allah Yang Maha Esa.</li><li data-letter="d. ">Beliau menjadi lebih fokus pada urusan keluarga dan rumah tangga.</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: c</span><br>Setelah menerima wahyu pertama (Q.S. Al-'Alaq/96: 1-5), Nabi Muhammad Saw. resmi diangkat menjadi rasul dan mulai menjalankan misi risalahnya, yaitu mengajak manusia bertauhid kepada Allah dan meninggalkan penyembahan berhala. Opsi b (menyendiri) justru merupakan kebiasaan beliau sebelum menerima wahyu (tahannuts).</div></details></div>
 
       <div class="soal"><p class="q">5. Kaum Quraisy Mekah sangat marah dengan dakwah Nabi Muhammad Saw. Mereka melakukan berbagai cara untuk menghentikan dakwah tersebut, termasuk menyakiti dan mengucilkan pengikut Nabi. Mengapa kaum Quraisy menolak dakwah Nabi Muhammad Saw dengan keras, padahal Muhammad dikenal sebagai orang yang jujur dan terpercaya (Al-Amin)?</p>
-      <ol class="opts"><li data-letter="a. ">karena mereka tidak suka dengan perubahan sosial yang dibawa oleh ajaran Islam.</li><li data-letter="b. ">karena mereka merasa tersaingi oleh kepopuleran Nabi Muhammad Saw.</li><li data-letter="c. ">karena mereka takut kehilangan kekuasaan dan pengaruh jika meninggalkan kepercayaan nenek moyang mereka.</li><li data-letter="d. ">semua jawaban di atas benar</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">karena mereka tidak suka dengan perubahan sosial yang dibawa oleh ajaran Islam.</li><li data-letter="b. ">karena mereka merasa tersaingi oleh kepopuleran Nabi Muhammad Saw.</li><li data-letter="c. ">karena mereka takut kehilangan kekuasaan dan pengaruh jika meninggalkan kepercayaan nenek moyang mereka.</li><li data-letter="d. ">semua jawaban di atas benar</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: d</span><br>Penolakan Quraisy bersifat berlapis: mereka khawatir kehilangan status sosial dan ekonomi (perdagangan berhala di Ka'bah), tidak siap dengan perubahan tatanan sosial yang menyamakan derajat manusia, sekaligus mempertahankan tradisi nenek moyang (taklid). Ketiga faktor ini saling terkait, sehingga jawaban paling tepat adalah gabungan semuanya.</div></details></div>
 
       <div class="soal"><p class="q">6. Strategi dakwah Nabi Muhammad Saw di Mekah dilakukan secara bertahap, dimulai dari lingkungan terdekat. Apa hikmah utama dari strategi dakwah Nabi Muhammad Saw yang dimulai dari keluarga dan sahabat terdekat?</p>
-      <ol class="opts"><li data-letter="a. ">untuk menghindari konflik dengan masyarakat Mekah secara langsung.</li><li data-letter="b. ">untuk memastikan adanya dukungan kuat sebelum dakwah dilakukan secara terbuka.</li><li data-letter="c. ">untuk menguji kesetiaan dan kepercayaan orang-orang terdekat kepada beliau.</li><li data-letter="d. ">untuk menunjukkan bahwa beliau lebih sayang kepada keluarga dan sahabat.</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">untuk menghindari konflik dengan masyarakat Mekah secara langsung.</li><li data-letter="b. ">untuk memastikan adanya dukungan kuat sebelum dakwah dilakukan secara terbuka.</li><li data-letter="c. ">untuk menguji kesetiaan dan kepercayaan orang-orang terdekat kepada beliau.</li><li data-letter="d. ">untuk menunjukkan bahwa beliau lebih sayang kepada keluarga dan sahabat.</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: b</span><br>Dakwah sirriyyah (sembunyi-sembunyi) dari lingkaran terdekat bertujuan membangun fondasi keimanan yang kuat, sehingga ketika dakwah jahriyyah (terang-terangan) dimulai, sudah ada kelompok pengikut yang solid dan siap menghadapi tantangan.</div></details></div>
 
       <div class="soal"><p class="q">7. Seorang pedagang yang jujur dan terpercaya di Mekah mendapat julukan "Al-Amin". Setelah menerima wahyu, ia mulai mengajak keluarga dan sahabat terdekatnya untuk menyembah Allah Swt. secara diam-diam. Ilustrasi tersebut menggambarkan strategi dakwah Rasulullah Saw. di Mekah yang dikenal dengan dakwah ....</p>
-      <ol class="opts"><li data-letter="a. ">Bil Hal</li><li data-letter="b. ">Sirriyyah</li><li data-letter="c. ">Bil Lisan</li><li data-letter="d. ">Jahriyyah</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">Bil Hal</li><li data-letter="b. ">Sirriyyah</li><li data-letter="c. ">Bil Lisan</li><li data-letter="d. ">Jahriyyah</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: b</span><br>Dakwah "diam-diam" kepada keluarga dan sahabat terdekat disebut dakwah sirriyyah (rahasia), yang berlangsung sekitar 3 tahun sebelum turun perintah dakwah terang-terangan (jahriyyah).</div></details></div>
 
       <div class="soal"><p class="q">8. Wahyu yang menjadi dasar strategi dakwah rahasia Rasulullah Saw. (memulai dari lingkaran terdekat) terdapat dalam ....</p>
-      <ol class="opts"><li data-letter="a. ">Q.S. Al-Alaq/96: 1-5</li><li data-letter="b. ">Q.S. Al-Anbiya'/21: 25</li><li data-letter="c. ">Q.S. Al-Muddassir/74: 1-5</li><li data-letter="d. ">Q.S. Asy-Syu'ara'/26: 214-216</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">Q.S. Al-Alaq/96: 1-5</li><li data-letter="b. ">Q.S. Al-Anbiya'/21: 25</li><li data-letter="c. ">Q.S. Al-Muddassir/74: 1-5</li><li data-letter="d. ">Q.S. Asy-Syu'ara'/26: 214-216</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: d</span><br>Q.S. Asy-Syu'ara'/26: 214-216 berisi perintah "berilah peringatan kepada kerabat-kerabatmu yang terdekat", yang menjadi landasan dakwah dimulai dari lingkaran keluarga dan orang-orang terdekat.</div></details></div>
 
       <div class="soal"><p class="q">9. Perhatikan pernyataan berikut: (1) Menyampaikan ajaran Islam kepada keluarga terdekat; (2) Mengajak seluruh masyarakat Mekah untuk menyembah berhala; (3) Melakukan dakwah secara terang-terangan setelah mendapat perintah; (4) Membentuk kelompok diskusi untuk memahami wahyu. Pernyataan yang termasuk strategi dakwah Rasulullah Saw. di Mekah pada periode awal adalah ...</p>
-      <ol class="opts"><li data-letter="a. ">1 dan 2</li><li data-letter="b. ">2 dan 3</li><li data-letter="c. ">1 dan 4</li><li data-letter="d. ">3 dan 4</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">1 dan 2</li><li data-letter="b. ">2 dan 3</li><li data-letter="c. ">1 dan 4</li><li data-letter="d. ">3 dan 4</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: c</span><br>Pernyataan (2) jelas salah karena bertentangan dengan misi tauhid Nabi. Pernyataan (3) bukan ciri "periode awal" karena dakwah terang-terangan baru dilakukan setelah fase sirriyyah. Yang mencirikan periode awal adalah (1) dakwah kepada keluarga terdekat dan (4) pendalaman pemahaman wahyu bersama sahabat.</div></details></div>
 
       <div class="soal"><p class="q">10. Apa pesan utama yang pertama kali Nabi Muhammad Saw. sampaikan kepada penduduk Mekah?</p>
-      <ol class="opts"><li data-letter="a. ">mengajak untuk berdagang dengan jujur dan menguntungkan.</li><li data-letter="b. ">mengajak untuk menyembah Allah Yang Maha Esa dan meninggalkan berhala.</li><li data-letter="c. ">mengajak untuk memperkuat persatuan suku-suku di Mekah.</li><li data-letter="d. ">mengajak untuk mempelajari ilmu pengetahuan dari bangsa lain.</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">mengajak untuk berdagang dengan jujur dan menguntungkan.</li><li data-letter="b. ">mengajak untuk menyembah Allah Yang Maha Esa dan meninggalkan berhala.</li><li data-letter="c. ">mengajak untuk memperkuat persatuan suku-suku di Mekah.</li><li data-letter="d. ">mengajak untuk mempelajari ilmu pengetahuan dari bangsa lain.</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: b</span><br>Inti risalah kenabian adalah tauhid — mengesakan Allah Swt. dan meninggalkan penyembahan berhala. Pesan inilah yang menjadi fondasi seluruh dakwah Nabi di Mekah.</div></details></div>
 
       <div class="soal"><p class="q">11. Seorang pedagang Mekah yang kaya raya awalnya menolak ajaran Nabi Muhammad Saw, tetapi kemudian beberapa orang dari kalangan lemah dan budak justru menerimanya. Kesimpulan yang paling tepat dari fenomena ini adalah ...</p>
-      <ol class="opts"><li data-letter="a. ">dakwah Nabi Muhammad Saw hanya ditujukan kepada golongan miskin.</li><li data-letter="b. ">dakwah Nabi Muhammad Saw lebih menekankan pada perubahan sosial daripada spiritual.</li><li data-letter="c. ">dakwah Nabi Muhammad Saw membawa pesan kesetaraan yang menarik bagi golongan tertindas.</li><li data-letter="d. ">pedagang Mekah menolak dakwah karena takut kehilangan keuntungan dagang.</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">dakwah Nabi Muhammad Saw hanya ditujukan kepada golongan miskin.</li><li data-letter="b. ">dakwah Nabi Muhammad Saw lebih menekankan pada perubahan sosial daripada spiritual.</li><li data-letter="c. ">dakwah Nabi Muhammad Saw membawa pesan kesetaraan yang menarik bagi golongan tertindas.</li><li data-letter="d. ">pedagang Mekah menolak dakwah karena takut kehilangan keuntungan dagang.</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: c</span><br>Islam mengajarkan kesetaraan derajat manusia di hadapan Allah tanpa memandang status sosial, sehingga pesan ini sangat menarik bagi kalangan lemah dan budak yang selama ini tertindas dalam sistem sosial Mekah yang timpang.</div></details></div>
 
       <div class="soal"><p class="q">12. Prinsip dakwah Nabi Muhammad Saw. di Mekah manakah yang paling relevan disampaikan kepada seorang remaja yang mengalami penolakan karena keyakinannya, agar ia tetap teguh?</p>
-      <ol class="opts"><li data-letter="a. ">mengajak kepada perdamaian dengan siapa pun tanpa syarat.</li><li data-letter="b. ">menghindari konfrontasi langsung dengan orang yang menolak.</li><li data-letter="c. ">bersabar dan tabah dalam menghadapi ujian dan cobaan.</li><li data-letter="d. ">menggunakan kekerasan untuk membela diri dari penindasan.</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">mengajak kepada perdamaian dengan siapa pun tanpa syarat.</li><li data-letter="b. ">menghindari konfrontasi langsung dengan orang yang menolak.</li><li data-letter="c. ">bersabar dan tabah dalam menghadapi ujian dan cobaan.</li><li data-letter="d. ">menggunakan kekerasan untuk membela diri dari penindasan.</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: c</span><br>Sikap sabar dan tabah adalah teladan utama Nabi dan para sahabat (mis. Bilal bin Rabah) dalam menghadapi tekanan dan penindasan karena keyakinan, dan menjadi prinsip yang relevan diterapkan siapa pun yang mengalami tekanan serupa.</div></details></div>
 
       <div class="soal"><p class="q">13. Bentuk penentangan awal yang paling umum dilakukan oleh kaum Quraisy terhadap dakwah Nabi Muhammad Saw adalah ...</p>
-      <ol class="opts"><li data-letter="a. ">membunuh secara terang-terangan</li><li data-letter="b. ">mengucilkan dari masyarakat</li><li data-letter="c. ">menyebarkan fitnah dan ejekan</li><li data-letter="d. ">menghancurkan rumah Nabi Muhammad Saw</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">membunuh secara terang-terangan</li><li data-letter="b. ">mengucilkan dari masyarakat</li><li data-letter="c. ">menyebarkan fitnah dan ejekan</li><li data-letter="d. ">menghancurkan rumah Nabi Muhammad Saw</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: c</span><br>Pada tahap awal penentangan, kaum Quraisy lebih banyak melakukan cemoohan, ejekan, dan fitnah (verbal) sebelum eskalasi meningkat ke penyiksaan fisik dan pemboikotan.</div></details></div>
 
       <div class="soal"><p class="q">14. Sahabat Nabi Muhammad Saw. bernama Bilal bin Rabah, meskipun disiksa dengan kejam oleh majikannya, tetap teguh pada keyakinannya. Tindakan Bilal bin Rabah tersebut mencerminkan sikap ...</p>
-      <ol class="opts"><li data-letter="a. ">kemarahan dan dendam</li><li data-letter="b. ">ketakutan dan kepasrahan</li><li data-letter="c. ">kesabaran dan keteguhan iman</li><li data-letter="d. ">kebencian terhadap kaum Quraisy</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">kemarahan dan dendam</li><li data-letter="b. ">ketakutan dan kepasrahan</li><li data-letter="c. ">kesabaran dan keteguhan iman</li><li data-letter="d. ">kebencian terhadap kaum Quraisy</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: c</span><br>Bilal bin Rabah tetap mengucapkan "Ahad, Ahad" (Allah Maha Esa) meski disiksa di bawah terik matahari dengan batu besar di dadanya — bukti nyata kesabaran dan keteguhan iman yang luar biasa.</div></details></div>
 
       <div class="soal"><p class="q">15. Mengapa pemboikotan ekonomi dan sosial terhadap Bani Hasyim dianggap sebagai cara yang "efektif" oleh kaum Quraisy?</p>
-      <ol class="opts"><li data-letter="a. ">karena pemboikotan langsung melukai fisik Nabi Muhammad Saw</li><li data-letter="b. ">karena pemboikotan membuat Nabi Muhammad Saw dan pengikutnya kekurangan makanan dan dukungan</li><li data-letter="c. ">karena pemboikotan membuat Nabi Muhammad Saw kehilangan popularitas</li><li data-letter="d. ">karena pemboikotan membuat Nabi Muhammad Saw meninggalkan Mekah</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">karena pemboikotan langsung melukai fisik Nabi Muhammad Saw</li><li data-letter="b. ">karena pemboikotan membuat Nabi Muhammad Saw dan pengikutnya kekurangan makanan dan dukungan</li><li data-letter="c. ">karena pemboikotan membuat Nabi Muhammad Saw kehilangan popularitas</li><li data-letter="d. ">karena pemboikotan membuat Nabi Muhammad Saw meninggalkan Mekah</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: b</span><br>Pemboikotan (memutus jual-beli, pernikahan, dan interaksi sosial) selama sekitar tiga tahun di Syi'ib Abi Thalib membuat Bani Hasyim dan pengikut Nabi mengalami kelaparan dan kesulitan hidup yang sangat berat — inilah yang membuatnya dianggap "efektif" sebagai tekanan.</div></details></div>
 
       <div class="soal"><p class="q">16. Berikut yang bukan termasuk orang-orang yang menebar ejekan dan ancaman kepada Rasulullah Saw. adalah ....</p>
-      <ol class="opts"><li data-letter="a. ">Abu Lahab</li><li data-letter="b. ">Abu Jahal</li><li data-letter="c. ">Walid bin Mughiroh</li><li data-letter="d. ">Abu Bakar As-Siddiq</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">Abu Lahab</li><li data-letter="b. ">Abu Jahal</li><li data-letter="c. ">Walid bin Mughiroh</li><li data-letter="d. ">Abu Bakar As-Siddiq</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: d</span><br>Abu Lahab, Abu Jahal, dan Walid bin Mughirah adalah tokoh-tokoh Quraisy yang paling gencar memusuhi dan mengejek dakwah Nabi. Sebaliknya, Abu Bakar As-Siddiq justru salah satu sahabat terdekat dan pendukung setia Nabi Muhammad Saw. sejak awal.</div></details></div>
 
       <div class="soal"><p class="q">17. Sikap Nabi Muhammad Saw. dalam menghadapi penolakan kaum Quraisy — tidak membalas kejahatan dengan kejahatan, melainkan dengan kesabaran dan kelembutan — menunjukkan pentingnya nilai ...</p>
-      <ol class="opts"><li data-letter="a. ">kekuatan fisik dalam berdakwah.</li><li data-letter="b. ">kekayaan materi sebagai daya tarik.</li><li data-letter="c. ">kesabaran dan kelembutan dalam berdakwah.</li><li data-letter="d. ">kecerdasan berdebat untuk memenangkan argumen.</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">kekuatan fisik dalam berdakwah.</li><li data-letter="b. ">kekayaan materi sebagai daya tarik.</li><li data-letter="c. ">kesabaran dan kelembutan dalam berdakwah.</li><li data-letter="d. ">kecerdasan berdebat untuk memenangkan argumen.</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: c</span><br>Nabi Muhammad Saw. dikenal sebagai teladan akhlak yang mengutamakan kesabaran dan kelembutan (uswatun hasanah), bahkan terhadap orang-orang yang memusuhinya, sebagaimana tercermin dalam peristiwa dakwah di Thaif.</div></details></div>
 
       <div class="soal"><p class="q">18. Seorang siswa Muslim di sekolah mengalami perundungan karena keyakinannya dan ingin membalas perbuatan teman-temannya. Sikap yang sebaiknya diteladani dari perjuangan Nabi Muhammad Saw. adalah ...</p>
-      <ol class="opts"><li data-letter="a. ">membalas perundungan dengan kekerasan yang lebih besar.</li><li data-letter="b. ">mengadukan masalah tersebut kepada guru dan bersabar dalam menghadapinya.</li><li data-letter="c. ">mengabaikan perundungan dan berpura-pura tidak terjadi apa-apa.</li><li data-letter="d. ">mencari dukungan dari teman-teman untuk melawan perundungan.</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">membalas perundungan dengan kekerasan yang lebih besar.</li><li data-letter="b. ">mengadukan masalah tersebut kepada guru dan bersabar dalam menghadapinya.</li><li data-letter="c. ">mengabaikan perundungan dan berpura-pura tidak terjadi apa-apa.</li><li data-letter="d. ">mencari dukungan dari teman-teman untuk melawan perundungan.</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: b</span><br>Meneladani sikap Nabi, respons yang tepat adalah bersabar sekaligus tetap mengambil langkah konstruktif (melapor kepada pihak berwenang seperti guru), bukan membalas dengan kekerasan maupun membiarkan tanpa tindakan.</div></details></div>
 
       <div class="soal"><p class="q">19. Nabi Muhammad Saw berdakwah secara sembunyi-sembunyi setelah diturunkannya surat ...</p>
-      <ol class="opts"><li data-letter="a. ">Q.S. Al-Hijr ayat 94</li><li data-letter="b. ">Q.S. Al-Anbiya ayat 107</li><li data-letter="c. ">Q.S. Al-Alaq ayat 1-5</li><li data-letter="d. ">Q.S. Al-Muddatsir ayat 1-7</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">Q.S. Al-Hijr ayat 94</li><li data-letter="b. ">Q.S. Al-Anbiya ayat 107</li><li data-letter="c. ">Q.S. Al-Alaq ayat 1-5</li><li data-letter="d. ">Q.S. Al-Muddatsir ayat 1-7</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: c</span><br>Setelah wahyu pertama turun (Q.S. Al-'Alaq/96: 1-5) di Gua Hira, Nabi memasuki masa dakwah sirriyyah (sembunyi-sembunyi) selama kurang lebih 3 tahun, sebelum turun perintah dakwah terang-terangan dalam Q.S. Al-Hijr/15: 94.</div></details></div>
 
       <div class="soal"><p class="q">20. Penduduk pedalaman selalu berpindah dari tempat yang satu ke tempat yang lain, karena cara hidup mereka adalah ...</p>
-      <ol class="opts"><li data-letter="a. ">imigrasi</li><li data-letter="b. ">akulturasi</li><li data-letter="c. ">nomaden</li><li data-letter="d. ">transmigrasi</li></ol></div>
+      <ol class="opts"><li data-letter="a. ">imigrasi</li><li data-letter="b. ">akulturasi</li><li data-letter="c. ">nomaden</li><li data-letter="d. ">transmigrasi</li></ol>
+      <details class="kunci"><summary></summary><div class="kunci-body"><span class="jawaban">Jawaban: c</span><br>Nomaden adalah gaya hidup berpindah-pindah tempat tinggal, ciri khas suku Badui (penduduk pedalaman/padang pasir) di jazirah Arab yang mengikuti sumber air dan padang rumput untuk ternak mereka.</div></details></div>
     </div>
 
     <div class="card">
@@ -113,16 +172,39 @@
         <tr><td>30. Tempat Nabi Muhammad Saw. mengasingkan diri [.......]</td><td>J. Al-Muddassir</td></tr>
         <tr><td></td><td>K. Amanah</td></tr>
       </table>
+      <details class="kunci"><summary></summary><div class="kunci-body">
+        <span class="jawaban">21 → G</span> (kekufuran, kemusyrikan, kemaksiatan)<br>
+        <span class="jawaban">22 → E</span> (jahiliyah)<br>
+        <span class="jawaban">23 → C</span> (571 M)<br>
+        <span class="jawaban">24 → D</span> (Hubal)<br>
+        <span class="jawaban">25 → B</span> (Khadijah binti Khuwailid)<br>
+        <span class="jawaban">26 → A</span> (Gua Hira)<br>
+        <span class="jawaban">27 → G</span> (kekufuran, kemusyrikan, kemaksiatan)<br>
+        <span class="jawaban">28 → H</span> (Al-Amin)<br>
+        <span class="jawaban">29 → I</span> (Gua Tsur)<br>
+        <span class="jawaban">30 → A</span> (Gua Hira)<br>
+        <div class="catatan">Catatan: opsi F (Kejujuran) dan K (Amanah) merupakan distraktor terkait sifat Nabi dan tidak terpakai. Soal No. 21 &amp; 27 (kondisi vs. perilaku masyarakat) serta No. 26 &amp; 30 (tempat wahyu pertama vs. tempat mengasingkan diri) memang mengarah pada jawaban yang sama secara substansi — mohon dicermati kembali oleh guru bila menghendaki jawaban yang benar-benar unik untuk tiap nomor.</div>
+      </div></details>
     </div>
 
     <div class="card">
       <p class="q" style="font-weight:700;">C. Guna mengasah cara berfikir kalian secara rasional, logis, kritis, dan analitis, jawablah pernyataan berikut dengan benar!</p>
       <ol style="padding-left:20px;display:flex;flex-direction:column;gap:8px;">
-        <li>31. Jelaskan secara singkat bagaimana kondisi sosial masyarakat Mekah sebelum Islam datang!</li>
-        <li>32. Sebutkan 3 contoh kerusakan moral yang terjadi di masyarakat Mekah sebelum Islam!</li>
-        <li>33. Apa saja misi kerasulan Nabi Muhammad Saw. di Mekah?</li>
-        <li>34. Jelaskan apa yang dimaksud dengan assabiqunal awwalun!</li>
-        <li>35. Meskipun Rasulullah Saw. adalah sosok yang lemah lembut dan penyayang, namun beliau bersikap tegas dalam menolak berbagai bentuk kekufuran dan kemaksiatan yang dilakukan oleh kaum kafir Quraisy Mekah. Apakah sikap Rasulullah Saw. tersebut perlu kita terapkan dalam kehidupan sehari-hari? Mengapa demikian? Jelaskan!</li>
+        <li>31. Jelaskan secara singkat bagaimana kondisi sosial masyarakat Mekah sebelum Islam datang!
+          <details class="kunci"><summary></summary><div class="kunci-body">Masyarakat Mekah sebelum Islam hidup dalam zaman jahiliah: menyembah berhala (musyrik), terjadi perbudakan dan perlakuan tidak adil terhadap perempuan, sering terjadi peperangan antarsuku, serta merebak kebiasaan berjudi, minum khamr, dan riba. Meski demikian, dari sisi perdagangan dan tradisi sastra (syair), masyarakat Mekah tergolong maju.</div></details>
+        </li>
+        <li>32. Sebutkan 3 contoh kerusakan moral yang terjadi di masyarakat Mekah sebelum Islam!
+          <details class="kunci"><summary></summary><div class="kunci-body">Contohnya: (1) mengubur bayi perempuan hidup-hidup (wa'dul banat), (2) berjudi, (3) meminum minuman keras (khamr). Contoh lain yang juga bisa diterima: praktik riba dan perzinaan.</div></details>
+        </li>
+        <li>33. Apa saja misi kerasulan Nabi Muhammad Saw. di Mekah?
+          <details class="kunci"><summary></summary><div class="kunci-body">Misi utamanya meliputi: menegakkan tauhid (mengesakan Allah dan meninggalkan penyembahan berhala), memperbaiki akhlak dan moral masyarakat, menghapus kesenjangan dan diskriminasi sosial (termasuk perbudakan), serta membebaskan manusia dari kebodohan dan kesesatan zaman jahiliah.</div></details>
+        </li>
+        <li>34. Jelaskan apa yang dimaksud dengan assabiqunal awwalun!
+          <details class="kunci"><summary></summary><div class="kunci-body">As-sabiqunal awwalun adalah sebutan bagi orang-orang yang pertama kali masuk Islam dan beriman kepada Allah Swt. serta Rasul-Nya pada masa dakwah sirriyyah, seperti Khadijah binti Khuwailid, Abu Bakar As-Siddiq, Ali bin Abi Thalib, Zaid bin Haritsah, dan beberapa sahabat lainnya.</div></details>
+        </li>
+        <li>35. Meskipun Rasulullah Saw. adalah sosok yang lemah lembut dan penyayang, namun beliau bersikap tegas dalam menolak berbagai bentuk kekufuran dan kemaksiatan yang dilakukan oleh kaum kafir Quraisy Mekah. Apakah sikap Rasulullah Saw. tersebut perlu kita terapkan dalam kehidupan sehari-hari? Mengapa demikian? Jelaskan!
+          <details class="kunci"><summary></summary><div class="kunci-body">Perlu diterapkan. Sikap tegas terhadap kemungkaran merupakan wujud amar ma'ruf nahi munkar yang harus dimiliki setiap Muslim agar tidak larut dalam pengaruh buruk lingkungan. Namun ketegasan ini harus tetap disertai kelembutan, kesabaran, dan akhlak mulia dalam menyampaikannya, sebagaimana diteladankan Rasulullah Saw. — tegas pada prinsip kebenaran, tetapi santun dalam cara penyampaian.</div></details>
+        </li>
       </ol>
     </div>
 </main>
