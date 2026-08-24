@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sejarah Kebudayaan Islam — Kelas 7 | MTs Lembah Manah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --emerald-950:#04211a;
+    --emerald-900:#0a3428;
+    --emerald-800:#0f4a37;
+    --emerald-700:#166247;
+    --emerald-600:#1c7a58;
+    --gold-500:#c9a24b;
+    --gold-400:#dab866;
+    --gold-100:#f3e6c4;
+    --parchment:#f6f1e4;
+    --ink:#1c2620;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:
+      radial-gradient(circle at 15% 10%, rgba(201,162,75,0.10), transparent 40%),
+      radial-gradient(circle at 85% 90%, rgba(201,162,75,0.08), transparent 45%),
+      var(--emerald-950);
+    color:var(--parchment);
+    font-family:'Inter', sans-serif;
+    min-height:100vh;
+    position:relative;
+    overflow-x:hidden;
+  }
+
+  /* subtle geometric texture */
+  body::before{
+    content:"";
+    position:fixed; inset:0;
+    background-image:
+      linear-gradient(30deg, rgba(201,162,75,0.045) 12%, transparent 12.5%, transparent 87%, rgba(201,162,75,0.045) 87.5%, rgba(201,162,75,0.045)),
+      linear-gradient(150deg, rgba(201,162,75,0.045) 12%, transparent 12.5%, transparent 87%, rgba(201,162,75,0.045) 87.5%, rgba(201,162,75,0.045)),
+      linear-gradient(30deg, rgba(201,162,75,0.045) 12%, transparent 12.5%, transparent 87%, rgba(201,162,75,0.045) 87.5%, rgba(201,162,75,0.045)),
+      linear-gradient(150deg, rgba(201,162,75,0.045) 12%, transparent 12.5%, transparent 87%, rgba(201,162,75,0.045) 87.5%, rgba(201,162,75,0.045));
+    background-size:80px 140px;
+    background-position:0 0, 0 0, 40px 70px, 40px 70px;
+    pointer-events:none;
+    z-index:0;
+  }
+
+  .wrap{position:relative; z-index:1; max-width:1080px; margin:0 auto; padding:0 24px 80px;}
+
+  /* ===== Header ===== */
+  header{
+    text-align:center;
+    padding:56px 16px 44px;
+    position:relative;
+  }
+  .star{
+    width:34px; height:34px;
+    margin:0 auto 18px;
+    color:var(--gold-400);
+    animation:spin-slow 40s linear infinite;
+  }
+  @keyframes spin-slow{ to{ transform:rotate(360deg); } }
+
+  .eyebrow{
+    font-family:'Amiri', serif;
+    font-size:15px;
+    letter-spacing:0.35em;
+    text-transform:uppercase;
+    color:var(--gold-400);
+    margin-bottom:14px;
+  }
+  h1{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:700;
+    font-size:clamp(28px, 4.4vw, 46px);
+    line-height:1.15;
+    color:var(--gold-100);
+    text-shadow:0 2px 18px rgba(0,0,0,0.35);
+  }
+  .sub1{
+    font-family:'Amiri', serif;
+    font-style:italic;
+    font-size:clamp(17px, 2.2vw, 21px);
+    color:rgba(246,241,228,0.82);
+    margin-top:10px;
+  }
+  .divider{
+    display:flex; align-items:center; justify-content:center; gap:14px;
+    margin:24px auto 22px;
+    max-width:340px;
+  }
+  .divider .line{ flex:1; height:1px; background:linear-gradient(90deg, transparent, var(--gold-500), transparent); }
+  .divider .dot{ width:6px; height:6px; background:var(--gold-500); transform:rotate(45deg); }
+
+  .sub2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    font-size:clamp(20px, 3vw, 27px);
+    color:var(--parchment);
+  }
+  .sub2 .accent{ color:var(--gold-400); }
+
+  .meta-tag{
+    display:inline-block;
+    margin-top:20px;
+    padding:7px 22px;
+    border:1px solid rgba(201,162,75,0.45);
+    border-radius:999px;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold-100);
+    background:rgba(201,162,75,0.07);
+  }
+
+  /* ===== Section labels ===== */
+  .section-label{
+    display:flex; align-items:center; gap:14px;
+    margin:52px 0 26px;
+  }
+  .section-label .line{ flex:1; height:1px; background:rgba(201,162,75,0.28); }
+  .section-label span{
+    font-family:'Amiri', serif;
+    font-size:14px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--gold-400);
+    white-space:nowrap;
+  }
+
+  /* ===== Bab cards ===== */
+  .bab-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:22px;
+  }
+  .bab-card{
+    display:block;
+    text-decoration:none;
+    position:relative;
+    background:linear-gradient(160deg, rgba(15,74,55,0.55), rgba(10,52,40,0.65));
+    border:1px solid rgba(201,162,75,0.28);
+    border-radius:4px;
+    padding:30px 26px 26px;
+    transition:transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+    overflow:hidden;
+  }
+  .bab-card::before{
+    content:"";
+    position:absolute; top:0; left:0; right:0; height:3px;
+    background:linear-gradient(90deg, var(--gold-500), transparent 70%);
+    opacity:0.8;
+  }
+  .bab-card::after{
+    content:"";
+    position:absolute; right:-30px; bottom:-30px;
+    width:120px; height:120px;
+    border:1px solid rgba(201,162,75,0.12);
+    transform:rotate(45deg);
+    border-radius:8px;
+  }
+  .bab-card:hover{
+    transform:translateY(-5px);
+    border-color:var(--gold-400);
+    box-shadow:0 18px 40px -18px rgba(0,0,0,0.55);
+  }
+  .bab-num{
+    font-family:'Cormorant Garamond', serif;
+    font-size:14px;
+    letter-spacing:0.2em;
+    color:var(--gold-400);
+    text-transform:uppercase;
+    margin-bottom:10px;
+  }
+  .bab-title{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:700;
+    font-size:23px;
+    color:var(--gold-100);
+    line-height:1.35;
+    margin-bottom:14px;
+  }
+  .bab-desc{
+    font-size:13.5px;
+    color:rgba(246,241,228,0.72);
+    line-height:1.6;
+    margin-bottom:18px;
+  }
+  .bab-go{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:12.5px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--gold-400);
+    font-weight:600;
+  }
+  .bab-go svg{ width:14px; height:14px; transition:transform .3s ease; }
+  .bab-card:hover .bab-go svg{ transform:translateX(4px); }
+
+  /* ===== Penilaian list ===== */
+  .assess-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+    gap:14px;
+  }
+  .assess-item{
+    display:flex; align-items:center; gap:14px;
+    text-decoration:none;
+    padding:16px 18px;
+    background:rgba(246,241,228,0.03);
+    border:1px solid rgba(201,162,75,0.18);
+    border-radius:4px;
+    transition:background .3s ease, border-color .3s ease;
+  }
+  .assess-item:hover{
+    background:rgba(201,162,75,0.08);
+    border-color:rgba(201,162,75,0.4);
+  }
+  .assess-icon{
+    width:30px; height:30px; flex-shrink:0;
+    border:1px solid var(--gold-500);
+    transform:rotate(45deg);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .assess-icon span{
+    transform:rotate(-45deg);
+    color:var(--gold-400);
+    font-family:'Cormorant Garamond', serif;
+    font-weight:700;
+    font-size:13px;
+  }
+  .assess-text .t1{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    font-size:16px;
+    color:var(--gold-100);
+  }
+  .assess-text .t2{
+    font-size:11.5px;
+    color:rgba(246,241,228,0.55);
+    letter-spacing:0.06em;
+  }
+
+  /* ===== Footer ===== */
+  footer{
+    margin-top:70px;
+    text-align:center;
+    padding-top:26px;
+    border-top:1px solid rgba(201,162,75,0.18);
+  }
+  footer p{
+    font-size:12px;
+    letter-spacing:0.06em;
+    color:rgba(246,241,228,0.45);
+    line-height:1.8;
+  }
+  footer .signature{
+    font-family:'Amiri', serif;
+    font-style:italic;
+    color:var(--gold-400);
+    font-size:14px;
+    margin-bottom:6px;
+  }
+
+  @media (max-width:480px){
+    header{padding:40px 10px 32px;}
+    .wrap{padding:0 16px 60px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <svg class="star" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polygon points="50,3 61,35 95,35 67,55 78,88 50,67 22,88 33,55 5,35 39,35"/>
+    </svg>
+    <div class="eyebrow">Yayasan Lembah Manah Langon Jepara</div>
+    <h1>Rintisan MTs Lembah Manah</h1>
+    <p class="sub1">مدرسة ثانوية لمبه مانه</p>
+    <div class="divider"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+    <p class="sub2">Mata Pelajaran <span class="accent">Sejarah Kebudayaan Islam</span> — Kelas 7</p>
+    <div class="meta-tag">Semester Gasal · Kurikulum Merdeka</div>
+  </header>
+
+  <!-- ================= BAB NAVIGATION ================= -->
+  <div class="section-label"><div class="line"></div><span>Jelajahi Bab</span><div class="line"></div></div>
+
+  <div class="bab-grid">
+    <a class="bab-card" href="Bab-1/index.html">
+      <div class="bab-num">Bab I</div>
+      <div class="bab-title">Misi dan Strategi Dakwah Rasulullah Saw. di Mekah</div>
+      <div class="bab-desc">Kondisi masyarakat Mekah, misi dan strategi dakwah Nabi, pokok-pokok dakwah, hingga penindasan kaum Quraisy.</div>
+      <span class="bab-go">Buka Bab 1
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+
+    <a class="bab-card" href="Bab-2/index.html">
+      <div class="bab-num">Bab II</div>
+      <div class="bab-title">Misi dan Strategi Dakwah Rasulullah Saw. di Madinah</div>
+      <div class="bab-desc">Kondisi masyarakat Madinah, sebab dan proses hijrah, strategi dakwah, hingga peperangan bersama para sahabat.</div>
+      <span class="bab-go">Buka Bab 2
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+
+    <a class="bab-card" href="Bab-3/index.html">
+      <div class="bab-num">Bab III</div>
+      <div class="bab-title">Kemajuan Umat Islam pada Masa Khulafaur Rasyidin</div>
+      <div class="bab-desc">Gaya kepemimpinan, biografi, dan prestasi Khulafaur Rasyidin serta ibrah yang dapat diteladani.</div>
+      <span class="bab-go">Buka Bab 3
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+  </div>
+
+  <!-- ================= PENILAIAN ================= -->
+  <div class="section-label"><div class="line"></div><span>Penilaian</span><div class="line"></div></div>
+
+  <div class="assess-grid">
+    <a class="assess-item" href="Bab-1/penilaian-formatif-1.html">
+      <div class="assess-icon"><span>1</span></div>
+      <div class="assess-text">
+        <div class="t1">Penilaian Formatif 1</div>
+        <div class="t2">Dakwah di Mekah</div>
+      </div>
+    </a>
+    <a class="assess-item" href="Bab-2/penilaian-formatif-2.html">
+      <div class="assess-icon"><span>2</span></div>
+      <div class="assess-text">
+        <div class="t1">Penilaian Formatif 2</div>
+        <div class="t2">Dakwah di Madinah</div>
+      </div>
+    </a>
+    <a class="assess-item" href="latihan-sumatif-tengah-semester.html">
+      <div class="assess-icon"><span>M</span></div>
+      <div class="assess-text">
+        <div class="t1">Latihan Sumatif Tengah Semester</div>
+        <div class="t2">Gasal</div>
+      </div>
+    </a>
+    <a class="assess-item" href="Bab-3/penilaian-formatif-3.html">
+      <div class="assess-icon"><span>3</span></div>
+      <div class="assess-text">
+        <div class="t1">Penilaian Formatif 3</div>
+        <div class="t2">Khulafaur Rasyidin</div>
+      </div>
+    </a>
+    <a class="assess-item" href="latihan-sumatif-akhir-semester.html">
+      <div class="assess-icon"><span>A</span></div>
+      <div class="assess-text">
+        <div class="t1">Latihan Sumatif Akhir Semester</div>
+        <div class="t2">Gasal</div>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    <p class="signature">﷽</p>
+    <p>Yayasan Lembah Manah Langon Jepara<br>
+    Rintisan MTs Lembah Manah — Mata Pelajaran Sejarah Kebudayaan Islam Kelas 7</p>
+  </footer>
+
+</div>
+</body>
+</html>
